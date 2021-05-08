@@ -1,0 +1,141 @@
+section.countdown {
+  background: url("../img/soon_bg.jpg") no-repeat;
+  background-size: cover;
+  padding: 8rem 0;
+}
+
+section.countdown .container {
+  max-width: 65%;
+  margin: 0 auto;
+}
+
+section.countdown .container .grid_countdown {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+section.countdown .container .grid_countdown .countdown_title {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section.countdown .container .grid_countdown .countdown_title h2, section.countdown .container .grid_countdown .countdown_title h1 {
+  color: #fff;
+}
+
+section.countdown .container .grid_countdown .countdown_title h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+section.countdown .container .grid_countdown .countdown_title h2 span {
+  color: #f5a425;
+}
+
+section.countdown .container .grid_countdown .countdown_title .grid_seconds {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(130px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+section.countdown .container .grid_countdown .countdown_title .grid_seconds .seconds {
+  height: 140px;
+  width: 130px;
+  background: rgba(250, 250, 250, 0.1);
+  padding: 1rem;
+}
+
+section.countdown .container .grid_countdown .countdown_title .grid_seconds .seconds h1, section.countdown .container .grid_countdown .countdown_title .grid_seconds .seconds p {
+  text-align: center;
+}
+
+section.countdown .container .grid_countdown .countdown_title .grid_seconds .seconds h1 {
+  font-size: 3rem;
+}
+
+section.countdown .container .grid_countdown .countdown_title .grid_seconds .seconds p {
+  color: #f5a425;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+section.countdown .container .grid_countdown .countdown_form {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+section.countdown .container .grid_countdown .countdown_form .form_info {
+  background: #565f6d;
+  padding: 2.5rem;
+}
+
+section.countdown .container .grid_countdown .countdown_form .form_info p {
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: .5px;
+}
+
+section.countdown .container .grid_countdown .countdown_form .form {
+  background: rgba(250, 250, 250, 0.1);
+  padding: 3.5rem 2.5rem;
+}
+
+section.countdown .container .grid_countdown .countdown_form .form input {
+  width: 100%;
+  padding: .75rem;
+  outline: none;
+  border: none;
+  margin-bottom: 1rem;
+  background: rgba(250, 250, 250, 0.2);
+}
+
+section.countdown .container .grid_countdown .countdown_form .form ::-webkit-input-placeholder {
+  color: #fff;
+  letter-spacing: .5px;
+}
+
+section.countdown .container .grid_countdown .countdown_form .form :-ms-input-placeholder {
+  color: #fff;
+  letter-spacing: .5px;
+}
+
+section.countdown .container .grid_countdown .countdown_form .form ::-ms-input-placeholder {
+  color: #fff;
+  letter-spacing: .5px;
+}
+
+section.countdown .container .grid_countdown .countdown_form .form ::placeholder {
+  color: #fff;
+  letter-spacing: .5px;
+}
+
+section.countdown .container .grid_countdown .countdown_form .form button {
+  background: #f5a425;
+  padding: .75rem 1.25rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 1rem auto 0 auto;
+}
+/*# sourceMappingURL=countdown.css.map */

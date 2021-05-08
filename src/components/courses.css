@@ -1,0 +1,93 @@
+section.courses {
+  background: url("../img/choosing-bg.jpg");
+  padding: 8rem 0;
+}
+
+section.courses .container {
+  max-width: 97%;
+  margin: 0 auto;
+}
+
+section.courses .container h2 {
+  text-align: center;
+  width: 270px;
+  display: block;
+  margin: 0 auto;
+  padding: 1rem 0;
+  color: #fff;
+  font-weight: 500;
+  border: 2px solid #2d384a;
+  margin-bottom: 5rem;
+}
+
+section.courses .container .grid_courses {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+
+section.courses .container .grid_courses .courses_1 {
+  background: #fff;
+  border-radius: 8px;
+}
+
+section.courses .container .grid_courses .courses_1 img.course_img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+section.courses .container .grid_courses .courses_1 .courses_info {
+  padding: 1.5rem;
+}
+
+section.courses .container .grid_courses .courses_1 .courses_info h3 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+section.courses .container .grid_courses .courses_1 .courses_info p {
+  color: #565f6d;
+  font-size: .9rem;
+  line-height: 25px;
+  margin-bottom: 1.5rem;
+}
+
+section.courses .container .grid_courses .courses_1 .courses_info .authors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.courses .container .grid_courses .courses_1 .courses_info .authors img {
+  border: 2px solid #f5a425;
+  border-radius: 50%;
+}
+
+section.courses .container .grid_courses .courses_1 .courses_info .authors li {
+  list-style: none;
+  cursor: pointer;
+}
+
+section.courses .container .grid_courses .courses_1 .courses_info .authors li.pay {
+  color: #f5a425;
+}
+
+section.courses .container .grid_courses .courses_1 .courses_info .authors li.free {
+  color: #565f6d;
+}
+/*# sourceMappingURL=courses.css.map */

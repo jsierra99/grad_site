@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 3%;
+  width: 100%;
+  position: fixed;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999;
+  background: #162239;
+}
+
+* body header .ham_nav {
+  display: none;
+  cursor: pointer;
+}
+
+* body header .ham_nav .line_1, * body header .ham_nav .line_2, * body header .ham_nav .line_3 {
+  width: 35px;
+  height: 6px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+* body header .ham_nav .line_1, * body header .ham_nav .line_2 {
+  margin-bottom: .25rem;
+}
+
+* body header h3 {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+* body header h3 span {
+  color: #f5a425;
+}
+
+* body header nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding-left: 2rem;
+}
+
+* body header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  padding: .5rem 1rem;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+* body header nav ul li a:active, * body header nav ul li a:hover {
+  border: 2px solid #f5a425;
+  padding: .5rem 1rem;
+}
+
+@media only screen and (max-width: 1040px) {
+  header .ham_nav {
+    display: block !important;
+  }
+  header nav {
+    display: none;
+  }
+  header.nav_down {
+    height: 350px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem;
+    position: relative;
+    top: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header.nav_down h3 {
+    font-size: 1.5rem;
+  }
+  header.nav_down .ham_nav {
+    position: relative;
+    left: 92%;
+  }
+  header.nav_down nav {
+    display: block;
+    position: relative;
+    left: -15px;
+  }
+  header.nav_down nav ul li {
+    display: block;
+    padding: 1.5rem 0 0 0;
+  }
+}
+/*# sourceMappingURL=header.css.map */

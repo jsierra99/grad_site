@@ -1,0 +1,49 @@
+section.sample {
+  background: #8C0303;
+  height: 100vh;
+}
+
+section.sample .container {
+  max-width: 65%;
+  margin: 0 auto;
+}
+
+section.sample .container .grid_sample {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+section.sample .container .grid_sample svg {
+  height: 20px;
+  width: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+section.sample .container .grid_sample .sample1 {
+  cursor: pointer;
+}
+
+section.sample .container .grid_sample .sample1 h1 {
+  text-align: center;
+}
+
+section.sample .container .grid_sample .inactive svg {
+  fill: #F2E0D0;
+}
+
+section.sample .container .grid_sample .active {
+  fill: #012611;
+}
+
+section.sample .container .grid_sample img {
+  display: none;
+}
+
+section.sample .container .grid_sample img.image0, section.sample .container .grid_sample img.image1, section.sample .container .grid_sample img.image2, section.sample .container .grid_sample img.image3 {
+  display: block;
+}
+/*# sourceMappingURL=sampleActive.css.map */
