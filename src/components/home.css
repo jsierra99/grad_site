@@ -201,9 +201,18 @@ section.home .container .grid_home .courses:nth-child(3):hover .more_info li a {
   border-bottom: 2px solid #fff;
 }
 
-@media screen and (max-width: 705px) {
+@media screen and (max-width: 780px) {
   section.home .title_wrap {
     padding-top: 5%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.home .title_wrap h1 {
+    font-size: 3rem;
   }
 }
 /*# sourceMappingURL=home.css.map */

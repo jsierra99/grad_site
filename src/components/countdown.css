@@ -25,6 +25,9 @@ section.countdown .container .grid_countdown .countdown_title {
   display: grid;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section.countdown .container .grid_countdown .countdown_title h2, section.countdown .container .grid_countdown .countdown_title h1 {
