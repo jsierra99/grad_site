@@ -1,0 +1,252 @@
+@import "../abstracts/colors.scss";
+
+section.home
+{
+    height: 110.4vh;
+    position: relative;
+    background: $mainBlue;
+    padding-top: 80px;
+    width: 100%;
+
+    .video
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 7px;
+        width: 100%;
+        
+        video
+        {
+            opacity: .2;
+            width: 100%;
+            max-height: 110.4vh;
+            min-height: 110.4vh;
+            object-fit: cover;
+        }
+    }
+
+    .title_wrap
+    {
+        display: grid;
+        place-items: center;
+        padding: 18% 1rem 0 1rem;
+        text-transform: uppercase;
+
+        h1, h4
+        {
+            text-align: center;
+        }
+
+        h4
+        {
+            color: #fff;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        h1
+        {
+            color: #fff;
+            font-size: 4.5rem;
+            margin: 1.5rem 0;
+            
+            span
+            {
+                color: $orange;
+            }
+        }
+
+        button.btn
+        {
+            background: $orange;
+            outline: none;
+            border: none;
+            display: block;
+            margin: 0 auto;
+            color: #fff;
+            font-size: .95rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+        }
+    }
+    .container
+    {
+        max-width: 58%;
+        margin: 0 auto;
+        
+        .grid_home
+        {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            position: absolute;
+            bottom: 0;
+            left: center;
+            max-width: 65%;
+            justify-content: center;
+
+            .courses
+            {
+                background: $mainBlue;
+                padding: 2.5rem 0 1.5rem 2.5rem;
+                cursor: pointer;
+                transition: .75s ease-in-out;
+
+                .svgs
+                {
+                    display: flex;
+                    margin-bottom: 1rem;
+                    
+                    svg
+                    {
+                        height: 25px;
+                        width: 25px;
+                        fill: #fff;
+                        margin-right: 1rem;
+                    }
+
+                    h3
+                    {
+                        color: #fff;
+                        font-size: 1.2rem;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .paragraph, .more_info
+                {
+                    display: none;
+                }
+            }
+
+            .courses:nth-child(1)
+            {
+                &:hover
+                {   
+                    background: $orange;
+                    color: #fff;
+                    
+                    .paragraph, .more_info
+                    {
+                        display: block;
+                    }
+
+                    .paragraph
+                    {
+                        line-height: 25px;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    .more_info
+                    {
+                        li
+                        {
+                            list-style: none;
+                            padding-bottom: 1rem;
+
+                            a
+                            {
+                                text-decoration: none;
+                                color: #fff;
+                                text-transform: uppercase;
+                                font-weight: 700;
+                                padding-bottom: .15rem;
+                                border-bottom: 2px solid #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            .courses:nth-child(2)
+            {   
+                &:hover
+                {
+                    background: $orange;
+                    color: #fff;
+                    
+                    .paragraph, .more_info
+                    {
+                        display: block;
+                    }
+
+                    .paragraph
+                    {
+                        line-height: 25px;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    .more_info
+                    {
+                        li
+                        {
+                            list-style: none;
+                            padding-bottom: 1rem;
+
+                            a
+                            {
+                                text-decoration: none;
+                                color: #fff;
+                                text-transform: uppercase;
+                                font-weight: 700;
+                                padding-bottom: .15rem;
+                                border-bottom: 2px solid #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            .courses:nth-child(3)
+            {
+                &:hover
+                {
+                    background: $orange;
+                    color: #fff;
+                    
+                    .paragraph, .more_info
+                    {
+                        display: block;
+                    }
+
+                    .paragraph
+                    {
+                        line-height: 25px;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    .more_info
+                    {
+                        li
+                        {
+                            list-style: none;
+                            padding-bottom: 1rem;
+
+                            a
+                            {
+                                text-decoration: none;
+                                color: #fff;
+                                text-transform: uppercase;
+                                font-weight: 700;
+                                padding-bottom: .15rem;
+                                border-bottom: 2px solid #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 705px)
+{
+    section.home
+    {
+        .title_wrap
+        {
+            padding-top: 5%;
+        }
+    }
+}

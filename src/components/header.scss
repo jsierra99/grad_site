@@ -1,0 +1,144 @@
+@import "../abstracts/colors.scss";
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    body
+    {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        header
+        {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 3%;
+            width: 100%;
+            position: fixed;
+            height: 80px;
+            align-items: center;
+            z-index: 999;
+            background: $headerBlue;
+
+            .ham_nav
+            {
+                display: none;
+                cursor: pointer;
+                
+                .line_1, .line_2, .line_3
+                {
+                    width: 35px;
+                    height: 6px;
+                    background: #fff;
+                    border-radius: 2px;
+                }
+
+                .line_1,.line_2
+                {
+                    margin-bottom: .25rem;
+                }
+            }
+
+            h3
+            {
+                font-size: 2.25rem;
+                text-transform: uppercase;
+                color: #fff;
+                letter-spacing: 1px;
+                cursor: pointer;
+
+                span
+                {
+                    color: $orange;
+                }
+            }
+
+            nav
+            {
+                ul
+                {
+                    li
+                    {
+                        list-style: none;
+                        display: inline-block;
+                        padding-left: 2rem;
+
+                        a
+                        {
+                            text-decoration: none;
+                            color: #fff;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            border: 2px solid transparent;
+                            padding: .5rem 1rem;
+                            transition: .5s ease-in-out;
+
+                            &:active, &:hover
+                            {
+                                border: 2px solid $orange;
+                                padding: .5rem 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1040px)
+{
+    header
+    { 
+        .ham_nav
+        {
+            display: block !important;
+        }
+
+        nav
+        {
+            display: none;
+        }
+    }
+
+    header.nav_down
+    {
+        height: 350px;
+        align-items: center;
+        padding: 2rem;
+        position: relative;
+        top: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+
+        h3
+        {
+            font-size: 1.5rem
+        }
+
+        .ham_nav
+        {
+            position: relative;
+            left: 92%;
+        }
+
+        nav
+        {
+            display: block;
+            position: relative;
+            left: -15px;
+
+            ul
+            {
+                li
+                {
+                    display: block;
+                    padding: 1.5rem 0 0 0 ;
+                }
+            }
+        }
+    }
+}
