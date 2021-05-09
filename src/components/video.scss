@@ -148,3 +148,19 @@ section.video
         }
     }
 }
+
+@media screen and (max-width: 780px)
+{
+    section.video
+    {
+        figure
+        {
+            h2
+            {
+                font-size: 1.2rem !important;
+                bottom: .75rem !important;
+                left: 1% !important;
+            }
+        }
+    }
+}

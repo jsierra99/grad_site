@@ -27,4 +27,14 @@ footer .vertical_line {
 footer span {
   color: #f5a425;
 }
+
+@media screen and (max-width: 600px) {
+  footer {
+    padding: 0 1rem;
+    font-size: .7rem;
+  }
+  footer .vertical_line {
+    display: none;
+  }
+}
 /*# sourceMappingURL=footer.css.map */

@@ -27,6 +27,7 @@ section.countdown
                 h2,h1
                 {
                     color: #fff;
+                    text-align: center;
                 }
 
                 h2
@@ -133,6 +134,17 @@ section.countdown
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    section.countdown
+    {
+        .grid_seconds
+        {
+            justify-items: center;
         }
     }
 }

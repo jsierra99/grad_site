@@ -13,7 +13,7 @@ section.about
         h2
         {
             text-align: center;
-            width: 330px;
+            width: 300px;
             display: block;
             margin: 0 auto;
             padding: 1rem 0;
@@ -99,6 +99,21 @@ section.about
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    section.about
+    {
+        .container
+        {
+            h2
+            {
+                width: 100% !important;
+                font-size: 1.1rem;
             }
         }
     }

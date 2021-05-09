@@ -118,4 +118,10 @@
     padding: 1.5rem 0 0 0;
   }
 }
+
+@media screen and (max-width: 600px) {
+  header h3 {
+    font-size: 1.2rem !important;
+  }
+}
 /*# sourceMappingURL=header.css.map */

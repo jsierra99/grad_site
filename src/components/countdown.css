@@ -32,6 +32,7 @@ section.countdown .container .grid_countdown .countdown_title {
 
 section.countdown .container .grid_countdown .countdown_title h2, section.countdown .container .grid_countdown .countdown_title h1 {
   color: #fff;
+  text-align: center;
 }
 
 section.countdown .container .grid_countdown .countdown_title h2 {
@@ -140,5 +141,11 @@ section.countdown .container .grid_countdown .countdown_form .form button {
   cursor: pointer;
   display: block;
   margin: 1rem auto 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  section.countdown .grid_seconds {
+    justify-items: center;
+  }
 }
 /*# sourceMappingURL=countdown.css.map */

@@ -27,7 +27,7 @@ section.home .title_wrap {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  padding: 18% 1rem 0 1rem;
+  padding: 8% 1rem 0 1rem;
   text-transform: uppercase;
 }
 
@@ -213,6 +213,32 @@ section.home .container .grid_home .courses:nth-child(3):hover .more_info li a {
   }
   section.home .title_wrap h1 {
     font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section.home .container {
+    margin: 0 auto 0 4rem;
+  }
+  section.home .title_wrap {
+    padding-top: 5%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.home .title_wrap h1 {
+    font-size: 2rem;
+  }
+  section.home .grid_home {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  section.home .grid_home .courses {
+    padding: 1rem 2rem 0 2rem !important;
   }
 }
 /*# sourceMappingURL=home.css.map */
